@@ -13,6 +13,8 @@
 /docroot/sites/*/settings.php
 /docroot/sites/*/settings.local.php
 
+/docroot/.ht.router.php
+
 # Ignore drush and drupal console aliases
 # /drush/aliases/local.aliases.drushrc.php
 # /console/sites/
