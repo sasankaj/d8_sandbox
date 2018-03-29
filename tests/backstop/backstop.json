@@ -43,7 +43,7 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "http://cbhsq8.docksal/",
+      "url": "http://d8_sandbox.docksal/",
       "hideSelectors": [],
       "removeSelectors": [],
       "selectorExpansion": true,
