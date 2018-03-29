@@ -1,8 +1,8 @@
 {
-  "name": "samhsa/cbhsq",
-  "description": "Center for Behavioral Health Statistics and Quality",
+  "name": "D8 Sandbox",
+  "description": "drupal 8 sandbox",
   "type": "project",
-  "license": "proprietary",
+  "license": "",
   "authors": [
       {
           "name": "Sasanka Jandhyala",

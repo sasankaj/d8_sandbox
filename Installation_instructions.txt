@@ -1,48 +1,63 @@
 1. Install composer if it is not already installed on your local machine 
-$ brew install composer
+    $ brew install composer
 
 2. Once you have composer installed locally, clone the drupal-project repository into your local machine
 
-git clone https://github.com/drupal-composer/drupal-project.git cbhsq-publisher
-
-composer install
+    $ git clone https://github.com/sasankaj/d8_sandbox.git d8_sandbox
 
 
-3. Navigate to the new cbhsq-publisher directory and create a folder .docksal and add docksal.env, docksal.yml and etc/php/php.ini, etc/mysql/my.cnf files 
+3. Navigate to the new d8_sandbox directory and 
 
-cd cbhsq-publisher
+ - If you want to change the site parameters, change the following files
+    site name, db name, db user, db password, db port no. in -
+        .docksal/docksal-local.env
+        docroot/sites/default/settings.local.php
 
-4. create a drush alias
+    site url in -
+        tests/backstop/backstop-settings.js
+        tests/backstop/backstop.json
+        tests/behat/behat.yml
 
+    metadata about site in -    
+        tests/behat/composer.json
+        composer.json
 
+    increase your php and mysql memory allocation in -
+        .docksal/etc/php/php.ini, 
+        .docksal/etc/mysql/my.cnf 
+
+4. From the d8_sandbox directory, install all project dependencies using composer.
+
+    $ cd d8_sandbox
+    $ composer install
 
 5. If your docksal vm is not already started, run this command, other wise skip to next step
-fin vm start
+    $ fin vm start
 
 
 6. start the project by running fin start up (up forces docksal to re-read the configuration)
 
-fin start up
+    $ fin start up
 
 
-7. go to mysql console,  check if database drupal_cbhsq is already created. If it is, then grant all privileges on this db to cbhsq_user
+7. go to mysql console,  check if database d8_sandbox is already created. If it is, then grant all privileges on this db to d8_user
 
 $ fin db cli
-mysql> create database drupal_cbhsq;
-mysql> Grant all privileges on drupal_cbhsq.* to cbhsq_user;
+mysql> create database d8_sandbox;
+mysql> Grant all privileges on d8_sandbox.* to d8_user;
 
 
 8. go to cbhsq.docksal in your browser. Use the following db configuration for installing d8 site 
 
-database name : drupal_cbhsq
-database username: cbhsq_user
+database name : d8_sandbox
+database username: d8_user
 database password: password
 hostname: db
 port number: 3306
 
 
 9. Site configuration info:
-Site name: CBHSQ Publisher
+Site name: D8 Sandbox
 Site email address: sasanka.jandhyala@icf.com
 site maintenance account: 
 username: admin
