@@ -1,8 +1,8 @@
 {
-    "name": "Drupal 8 Sandbox",
+    "name": "drupal8/sandbox",
     "description": "Drupal 8 base install for development using Docksal",
     "type": "project",
-    "license": "",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Sasanka Jandhyala",

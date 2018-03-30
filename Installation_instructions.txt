@@ -25,7 +25,7 @@
         .docksal/etc/php/php.ini, 
         .docksal/etc/mysql/my.cnf 
 
-4. From the d8_sandbox directory, install all project dependencies using composer.
+4. From the d8sandbox directory, install all project dependencies using composer.
 
     $ cd d8_sandbox
     $ composer install
@@ -39,29 +39,32 @@
     $ fin start up
 
 
-7. go to mysql console,  check if database d8_sandbox is already created. If it is, then grant all privileges on this db to d8_user
+7. At this point you have your drupal site ready for installation. You can either import the database for a vanilla drupal installation from 
+the database_dumps directory (step 7a.) or go through the site setup process (Step 7b.).
 
-$ fin db cli
-mysql> create database d8_sandbox;
-mysql> Grant all privileges on d8_sandbox.* to d8_user;
+    7a. go to mysql console,  check if database d8_sandbox is already created. If it is, then grant all privileges on this db to d8_user
 
-
-8. go to cbhsq.docksal in your browser. Use the following db configuration for installing d8 site 
-
-database name : d8_sandbox
-database username: d8_user
-database password: password
-hostname: db
-port number: 3306
+        $ fin db cli
+        mysql> create database d8_sandbox;
+        mysql> Grant all privileges on d8_sandbox.* to d8_user;
 
 
-9. Site configuration info:
-Site name: D8 Sandbox
-Site email address: sasanka.jandhyala@icf.com
-site maintenance account: 
-username: admin
-password: password
-timezone: new york
+    7b. go to http://d8sandbox.docksal in your browser. Use the following db configuration for installing d8 site 
+
+        database name : d8_sandbox
+        database username: d8_user
+        database password: password
+        hostname: db
+        port number: 3306
+
+
+        Site name: D8 Sandbox
+        Site email address: <your_email_id@domain.com>
+        site maintenance account: 
+        username: admin
+        password: password
+        Default Country: United States
+        timezone: New York
 
 
 
@@ -78,8 +81,8 @@ xdebug-
 fin exec php -v | grep -i xdebug
 
 drush-
-fin drush @cbhsq.local cr
-fin drush @cbhsq.local cex -v
+fin drush @d8sandbox.local cr
+fin drush @d8sandbox.local cex -v
 
 drupal console-
 fin drupal --version
