@@ -43,7 +43,7 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "http://d8_sandbox.docksal/",
+      "url": "http://d8sandbox.docksal/",
       "hideSelectors": [],
       "removeSelectors": [],
       "selectorExpansion": true,

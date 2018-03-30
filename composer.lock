@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "71c04072e843dfb3057702dc2b83813f",
+    "content-hash": "5d4c6bdfc6a70359268baa0d0d5ba567",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6054,7 +6054,8 @@
                 "source": "http://cgit.drupalcode.org/examples",
                 "issues": "https://www.drupal.org/project/issues/examples",
                 "documentation": "https://api.drupal.org/api/examples"
-            }
+            },
+            "time": "2018-02-15T18:23:34+00:00"
         },
         {
             "name": "drupal/styleguide",
@@ -6131,7 +6132,8 @@
             "homepage": "https://www.drupal.org/project/styleguide",
             "support": {
                 "source": "http://cgit.drupalcode.org/styleguide"
-            }
+            },
+            "time": "2017-12-08T19:28:08+00:00"
         },
         {
             "name": "fabpot/goutte",

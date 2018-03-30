@@ -27,11 +27,11 @@ var scenarios = []; // The array that'll have the pages to test
  */
 // The host to test
 if (!arguments.testhost) {
-  arguments.testhost  = "http://d8_sandbox.docksal"; // Default test host
+  arguments.testhost  = "http://d8sandbox.docksal"; // Default test host
 }
 // The host to reference
 if (!arguments.refhost) {
-  arguments.refhost  = "http://d8_sandbox.docksal"; // Default test host
+  arguments.refhost  = "http://d8sandbox.docksal"; // Default test host
 }
 /*
   Work out which paths to use, either a supplied array, an array from a file, or the defaults
